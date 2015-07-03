@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clear{
+    clear:both;
+}
+a{
+    text-decoration:none;
+}
+.white {
+    color:#fff;
+}
+.black {
+    color:#000;
+}
+.center{
+    text-align:center;
+}
+.mcenter{
+    margin:0 auto;
+}
+.left{
+    text-align:left;
+}
+.justify{
+    text-align:justify;
+}
+.f-left{
+    float:left;
+}
+.f-right{
+    float:right;
+}
+.t-outer{
+    display:table;
+}
+.t-cell{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
