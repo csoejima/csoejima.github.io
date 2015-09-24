@@ -191,8 +191,8 @@
 		</div>
 		<div class="slide">
 			<div style="width:70%;margin:0 auto;">
-			<?php
-				/* $dir = "img/prt/*.*";
+			<!--php
+				$dir = "img/prt/*.*";
 				foreach(glob($dir) as $file){  
 				    $imgsize = getimagesize($file);
 				    $width = $imgsize[0];
@@ -209,14 +209,19 @@
 				    echo '<div class="gallery"><figure><img src="'.$file.'" alt="image" '.$resize.'/><figcaption><div><a href="'.$file.'" rel="shadowbox[art]">Click to enlarge</a></div></figcation></figure></div>
 ';  
 				}
-				*/
-			?>
+			-->
+				<script>
+					var file_list = ['2013cultureshow1a.png','2013slopeday2.png','4240finalprojposter.png','apo_batman_logo.png','apo_qcard_frozen1_INCOMPLETE.png','boom_logo2a.png','boom_logo7.png','bulbasaur001.png','ChiakiSoejima__In_Celebration_v2.png','cornell150.png','CUAirqcard1.png','CUAirqcard2.png','DMAPmilotic1.jpg','eyes_mock3.png','hosting_services.png','IMG_1624.JPG','IMG_1629.JPG','IMG_1635.JPG','inspire2.png','jointconcert0.jpg','meercaday1.jpg','meghan00.png','nates_run_siteimg.jpg','origamicranewallpaper.jpg','P1020444.png','P1020452.png','project1_web2300.jpg','project3_web1300.JPG','recbannera.png','Sept_2014_acadtechfair1_Page_1.png','storm4.png','technology_fair_ATC.png'];
+					for (var i=0;i<file_list.length;i++){
+						var file_path = 'img/prt/' + file_list[i];
+						document.write( '<div class="gallery"><figure><img src="' + file_path + '" alt="image" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[art]">Click to enlarge</a></div></figcation></figure></div>');
+					}
+				</script>
 			</div>
 		</div>
 		<div class="slide">
 			<div style="width:70%;margin:0 auto;">
-			<?php
-			/*
+			<!--php
 				$dir = "img/photos/*.*";
 				foreach(glob($dir) as $file){  
 				    $imgsize = getimagesize($file);
@@ -233,8 +238,14 @@
 				    }
 				    echo '<div class="gallery"><figure><img src="'.$file.'" alt="photo" '.$resize.'/><figcaption><div><a href="'.$file.'" rel="shadowbox[photos]">Click to enlarge</a></div></figcation></figure></div>';  
 				}
-				*/
-			?>
+			-->
+				<script>
+					var file_list = ['010.jpg','011.jpg','P1000899b.jpg','P1000907a.jpg','P1010217.jpg','P1010567c.jpg','P1012114.JPG','P1020259.JPG','P1020356.jpg','P1030297.JPG','P1030361.JPG','P1030390.JPG','P1030436.jpg','P1030440.JPG','P1030656.JPG','P1030660.JPG','P1040419a.jpg','si4h302c.jpg'];
+					for (var i=0;i<file_list.length;i++){
+						var file_path = 'img/prt/' + file_list[i];
+						document.write( '<div class="gallery"><figure><img src="' + file_path + '" alt="image" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[art]">Click to enlarge</a></div></figcation></figure></div>');
+					}
+				</script>
 			</div>
 		</div>
 	</div>
