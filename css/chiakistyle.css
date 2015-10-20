@@ -130,13 +130,13 @@ body{
 #icon_menu{
 	margin:0;
 	padding:0;
-	font-family:'ModernPics',sans-serif;
 }
 #icon_menu li{
 	background:transparent;
 	display:block;
 	line-height:60px;
 	margin:0;
+	font-family:'ModernPics',sans-serif;
 }
 #icon_menu li a,#icon_menu li.active a{
 	padding:0 5px;
