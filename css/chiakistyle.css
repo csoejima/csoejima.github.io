@@ -1,8 +1,6 @@
 @charset 'utf-8';
 /* CSS Document */
 
-@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
-
 @font-face{
 	font-family:'Fira-Light';
 	src:url('/fonts/FiraSans-Light.otf')
@@ -24,14 +22,17 @@
 	src:url('/fonts/code-light.ttf');
 }
 @font-face{
-	font-family:'Throw-Bold';
-	src:url('/fonts/ThrowMyHandsUpintheAirBold.ttf');
+	font-family:'ModernPics';
+	src:url('/fonts/modernpics.otf');
 }
 @font-face{
-	font-family:'Throw-Light';
-	src:url('/fonts/ThrowMyHandsUpintheAir.ttf');
+	font-family:'Anders';
+	src:url('/fonts/Anders.ttf');
 }
-
+@font-face{
+	font-family:'SUNN';
+	src:url('/fonts/SUNN.otf');
+}
 #ban1{display:none;}
 
 *, *:before, *:after{
@@ -129,6 +130,7 @@ body{
 #icon_menu{
 	margin:0;
 	padding:0;
+	font-family:'ModernPics',sans-serif;
 }
 #icon_menu li{
 	background:transparent;
@@ -206,7 +208,7 @@ h1{
 	box-shadow: 0 10px 90px rgba(0,0,0,0.5);
 }
 #about-section{
-	background:#000 url('../img/jonas_nilsson_lee.jpg') center center / cover fixed;
+	background:#000 url('../img/jonas_nilsson_lee.jpg') center center fixed;
 }
 #ban2{
 	background:#000 url('http://subtlepatterns.com/patterns/argyle.png') fixed;
@@ -474,4 +476,5 @@ h1{
 }
 #contact-section{
 	background:#ccc;
+	height:40vh;
 }
