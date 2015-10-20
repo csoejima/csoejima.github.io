@@ -7,23 +7,23 @@
 a{
     text-decoration:none;
 }
-.white {
+.font-white{
     color:#fff;
 }
-.black {
+.font-black{
     color:#000;
 }
-.center{
+.font-center{
     text-align:center;
 }
-.mcenter{
-    margin:0 auto;
-}
-.left{
+.font-left{
     text-align:left;
 }
-.justify{
+.font-justify{
     text-align:justify;
+}
+.m-center{
+    margin:0 auto;
 }
 .f-left{
     float:left;
