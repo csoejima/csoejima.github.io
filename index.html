@@ -16,23 +16,35 @@
 <script src="shadowbox-3.0.3/shadowbox.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-	function parallaxify(){
+	/* function parallaxify(){
   	$('.parallaxify').css('background-position','0'+(($(window).scrollTop()+1)*(-1.5))+'px');
-	}
+	} */
 	$(document).ready(function(){
 		$('#fullpage').fullpage({
 			anchors:['top','about','projects','art','contact'],
 			menu:'#icon_menu',
 			fixedElements:'#navbar',
-			autoScrolling:false,
-			fitToSection:false,
+			//autoScrolling:false,
+			//fitToSection:false,
 			scrollingSpeed:600,
-			keyboardScrolling:false
+			scrollBar:true,
+			//keyboardScrolling:false,
+			onLeave:function(index,nextIndex,direction){
+        var leavingSection = $(this);
+        var slide = leavingSection.find('.slide.active');
+        if(typeof slide !== 'undefined'){
+            destination = slide;
+        }
+        else{
+            destination = leavingSection;
+        }
+        destination.addClass('loadImage');
+      }
 		});
 
 		$('#icon_menu').hide();
 		$(window).scroll(function(){
-				parallaxify();
+				// parallaxify();
 
 		    if($(window).scrollTop() == 0){
 	        $('#nav_contact,#menu').show();
@@ -153,7 +165,7 @@
 		<div class="clear"></div>
 	</div> -->
 
-	<div class="section parallaxify" id="about-section">
+	<div class="section bg-cover" id="about-section">
 			<div class="container">
 				Background
 				<p>I was born in Japan, but I moved to the United States when I was 10 months old. Until I was about four, we lived in our house in McLean, Virginia--but soon after, my dad was relocated to New York City and so we moved to Darien, Connecticut, where I've lived ever since.</p>
@@ -186,14 +198,14 @@
 			<li>
 				<figure class="panel">
 					<div class="art-general front_panel">
-						Photo
+						General
 				  </div>
 					<figcaption class="back_panel">
 						<script>
 							var file_list = ['2013cultureshow1a.png','2013slopeday2.png','4120finalprojposter.png','4240finalprojposter.png','apo_batman_logo.png','apo_qcard_frozen1_INCOMPLETE.png','boom_logo2a.png','boom_logo7.png','bulbasaur001.png','ChiakiSoejima__In_Celebration_v2.png','cornell150.png','CUAirqcard1.png','DMAPmilotic1.jpg','draik14at.jpg','eyes_mock3.png','ghastly_101315sm.png','hanamizuki_2015poster.png','hanamizuki_2015poster2.png','hosting_services.png','IMG_1624.JPG','IMG_1629.JPG','inspire2.png','jointconcert0.jpg','mechedesign.png','meercaday1.jpg','meghan00.png','origamicranewallpaper.jpg','P1020444.png','P1020452.png','porcorosso1a_sm.png','project1_web2300.jpg','project3_web1300.JPG','Sept_2014_acadtechfair1_Page_1.png','storm4.png','suicune1.jpg','table2table_process.png','table2table_zfinal.png','technology_fair_ATC.png'];
 							for(var i=0;i<file_list.length;i++){
 								var file_path = 'img/prt/' + file_list[i];
-								document.write('<div class="gallery"><figure><img src="' + file_path + '" alt="image" class="thumb" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[art]">Click to enlarge</a></div></figcation></figure></div>');
+								document.write('<div class="gallery"><figure><img data-src="' + file_path + '" alt="image" class="thumb" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[art]">v</a></div></figcation></figure></div>');
 							}
 						</script>
 					</figcaption>
@@ -209,7 +221,7 @@
 							var file_list = ['010.jpg','011.jpg','P1000899b.jpg','P1000907a.jpg','P1010217.jpg','P1010567c.jpg','P1012114.JPG','P1020259.JPG','P1020356.jpg','P1030297.JPG','P1030361.JPG','P1030390.JPG','P1030436.jpg','P1030440.JPG','P1030656.JPG','P1030660.JPG','P1040419a.jpg','Phone001.png','Phone002.png','Phone003.png','Phone004.png','Phone005.png','Phone006.png','Phone007.png','Phone008.jpg','Phone009.png','Phone010.png','SAM_0348_2.jpg','SAM_0374_2.jpg','SAM_0381.JPG','SAM_0395.JPG','si4h302c.jpg'];
 							for(var i=0;i<file_list.length;i++){
 							var file_path = 'img/photos/' + file_list[i];
-							document.write('<div class="gallery"><figure><img src="' + file_path + '" alt="photo" class="thumb" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[photos]">Click to enlarge</a></div></figcation></figure></div>');
+							document.write('<div class="gallery"><figure><img data-src="' + file_path + '" alt="photo" class="thumb" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[photos]">v</a></div></figcation></figure></div>');
 							}
 						</script>
 					</figcaption>

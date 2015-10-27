@@ -150,6 +150,16 @@ h1{
 .section{
 	text-align:center;
 }
+/* #slide1 {
+   -webkit-background-size:cover;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   background-size:cover;
+   height:100%;
+}
+#slide1.loadImage{
+    background: url(../img/portraits/01.jpg) no-repeat center;
+} */
 #home-section{
 	background:#db1e25 url('/img/redbg.jpg') center top / cover fixed no-repeat;
 	padding-left:200px;
@@ -210,7 +220,7 @@ h1{
 	box-shadow: 0 10px 90px rgba(0,0,0,0.5);
 }
 #about-section{
-	background:#000 url('../img/jonas_nilsson_lee.jpg') center center fixed;
+	background:#000 url('../img/photos/P1020356.jpg') center center / cover fixed;
 }
 #ban2{
 	background:#000 url('http://subtlepatterns.com/patterns/argyle.png') fixed;
@@ -431,15 +441,14 @@ h1{
   position:relative;
   top:20px;
   opacity:0;
-  color:#fff;
-  text-transform:uppercase;
 }
 .gallery figcaption div a{
   color:#fff;
   text-transform:uppercase;
   text-decoration:none;
+	font-family:'ModernPics',sans-serif;
 }
-.gallery figcaption div:after{
+/* .gallery figcaption div:after{
   position:absolute;
   content:'';
   left:0;
@@ -450,7 +459,7 @@ h1{
   width:0%;
   height:2px;
   background:#fff;
-}
+} */
 .gallery figure img{
   -webkit-transition:all 0.5s linear;
   transition:all 0.5s linear;
