@@ -29,7 +29,7 @@
 			scrollingSpeed:600,
 			scrollBar:true,
 			//keyboardScrolling:false,
-			onLeave:function(index,nextIndex,direction){
+			/* onLeave:function(index,nextIndex,direction){
         var leavingSection = $(this);
         var slide = leavingSection.find('.slide.active');
         if(typeof slide !== 'undefined'){
@@ -39,7 +39,7 @@
           destination = leavingSection;
         }
         destination.addClass('loadImage');
-      }
+      }*/
 		});
 
 		$('#icon_menu').hide();
@@ -108,13 +108,11 @@
 		<div id="nav_contact">
 			<p id="nav_contact_header">Reach me @:</p>
 			(203) 428-1082<br/>
-			cs833@cornell.edu<br/>
-			71 Hoyt St.</br>
-			Darien, CT 06820
+			cs833@cornell.edu
 		</div>
 	</div>
 
-<div id="fullpage" class="fullpage-wrapper">
+<div id="fullpage">
 	<div class="section" id="home-section">
 		<object type="image/svg+xml" data="img/coffeecup.svg" style="width:50%;margin-left:-25%;">(PNG image hurr)</object>
 		<div id="home_welcome">
@@ -177,14 +175,14 @@
 			</div>
 	</div>
 	<div class="section" id="projects-section">
-		<div class="slide active">
+		<div class="slide active" id="slide1">
 			<h1>Still a WIP!</h1>
 			While I work to make my website look nice,<br/>
 			here is a link to my resume:<br/>
 			
 			<a href="/files/Chiaki_Soejima_resume_fa15.pdf" id="resume" target="_blank">Resume</a>
 		</div>
-		<div class="slide">
+		<div class="slide" id="slide2">
 			<div class="container">
 				<h1>Websites</h1>
 				Again, still a WIP, but check out websites where I've helped redesign the layout:<br/>
@@ -197,8 +195,8 @@
 		<ul class="panels">
 			<li>
 				<figure class="panel">
-					<div class="art-general front_panel" id="panel-general">
-						General
+					<div class="art-general front_panel">
+						Art
 				  </div>
 					<figcaption class="back_panel">
 						<script>
@@ -213,8 +211,8 @@
 			</li>
 			<li>
 				<figure class="panel">
-					<div class="art-photos front_panel" id="panel-photos">
-						Photo
+					<div class="art-photos front_panel">
+						Photos
 				  </div>
 					<figcaption class="back_panel">
 						<script>
