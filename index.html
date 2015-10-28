@@ -22,7 +22,7 @@
 			anchors:['top','about','projects','art','contact'],
 			menu:'#icon_menu',
 			fixedElements:'#navbar',
-			//normalScrollElements:'#about-section',
+			normalScrollElements:'#about-container',
 			recordHistory:false,
 			fitToSection:false,
 			scrollingSpeed:600,
@@ -30,6 +30,7 @@
 			//scrollBar:true,autoScrolling:false,keyboardScrolling:false,
       onLeave:function(index,nextIndex,direction){
         //var leavingSection = $(this);
+        /* navigation menu */
         if(index == 1 && direction =='down'){
 	        $('#nav_contact,#menu').hide();
 	        $('#icon_menu').show();
@@ -42,6 +43,17 @@
 	        $('#icon_menu').hide();
 	        $('#navbar').animate({
             width:'200px'
+	        },400);
+        }
+        /* profile left pane */
+        if(index == 2){
+	        $('#about-lcontainer').animate({
+	          width:'0'
+	        },700);
+        }
+        else if(index != 2 && nextIndex == 2){
+	        $('#about-lcontainer').animate({
+            width:'44%'
 	        },400);
         }
       }
@@ -102,49 +114,6 @@
 			<span class="welcome_l font-white">I am </span><span class="welcome_b font-white">Casey.</span>
 		</div>
 	</div>
-	<!--
-	<div id="ban1">
-		- I like to design and develop things. -<br/>
-	</div>
-	<div class="clear"></div>
-	<div class="section" id="section1">
-		<div id="profile_column_left">
-			<div id="profile_pic">
-				<img class="lazy" data-original="img/0_P1040714.jpg" height="150%" />
-			</div>
-			<div id="under_profpic">
-				<span class="profile_name mcenter">Chiaki Soejima</span>
-			</div>
-		</div>
-		<div id="profile_column_right">
-			<div class="justify">
-			<p>I am a junior at Cornell University in the College of Engineering, majoring in ISST (Information Science). On campus, I serve as webmaster on the executive board for Slope Media Group, am a brother of Alpha Phi Omega, work at the Cornell Academic Technologies Center in the Student Technology Assistant Program, and am / have been a teaching assistant for several classes. I enjoy playing games and am always up for a round of Smash Bros!</p>
-
-		<p>I was born in Japan, but I moved to the United States when I was 10 months old. Until I was about four, we lived in our house in McLean, Virginia--but soon after, my dad was relocated to New York City and so we moved to Darien, Connecticut, where I've lived ever since.</p>
-
-		<p>I've always had an interest in engineering and computer science, as well as psychology, communication, and cognitive science. I've always been fascinated by web development and design, since I've been exposed to it ever since I was young by a website called Neopets.com. Through friends I've made at Cornell, I learned more about the ISST/info-sci major and how it encompassed everything that I was interested in pursuing, from human-computer interaction and user interface/experience design to web development.</p>
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-			-->
-			<!-- <div id="ban2">
-				<p>- WEBSITE STILL UNDER DEVELOPMENT -</p>
-				<div class="thirdbox" id="ban1_box1">
-					Web Design & Development
-					<i>Yay UI!</i>
-				</div>
-				<div class="thirdbox" id="ban1_box2">
-					UI/UX Design
-					<i>Hmmmm</i>
-				</div>
-				<div class="thirdbox" id="ban1_box3">
-					Business Analytics
-					<i>Design!</i>
-				</div>
-				<div class="clear"></div>
-			</div> -->
-
 	<div class="section" id="about-section">
 		<div id="about-lcontainer">
 			<img data-src="img/SAM_0347_2-DNU2.jpg" alt="profilepic" class="profpic" />
@@ -157,7 +126,18 @@
 			<p>I was born in Japan, but I moved to the United States when I was 10 months old. Until I was about four, we lived in our house in McLean, Virginia--but soon after, my dad was relocated to New York City and so we moved to Darien, Connecticut, where I've lived ever since.</p>
 			<span class="about_title">Education</span>
 			<p>I am a senior at Cornell University in the College of Engineering, majoring in ISST (Information Science). On campus, I serve as Webmaster on the executive board for Slope Media Group, am a brother of Alpha Phi Omega, work as a lab operator for Cornell CIT (formerly at the Cornell Academic Technologies Center in the Student Technology Assistant Program), and am / have been a teaching assistant for the Introduction to and Intermediate Web Design & Development courses.</p>
-			<p>derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp derp </p>
+			<p>I've always had an interest in engineering and computer science, as well as psychology, communication, and cognitive science. I've always been fascinated by web development and design, since I've been exposed to it ever since I was young by a website called Neopets.com. Through friends I've made at Cornell, I learned more about the ISST/info-sci major and how it encompassed everything that I was interested in pursuing, from human-computer interaction and user interface/experience design to web development.</p>
+			<span class="about_title">Interests</span>
+			<p>I currently have a wide array of areas that I have a curiosity for/interest in:
+			<ul>
+				<li>Web development</li>
+				<li>UI/UX design</li>
+				<li>Graphic design</li>
+				<li>Marketing</li>
+			</ul>
+			<span class="about_title">Hobbies</span>
+			<p>When I'm not in class, sleeping, or eating, I love to travel and explore new things. I really enjoy playing games and am always up for a game of Smash--in Smash 4 (Wii U & 3DS), my mains are Ness and Lucina.</p>
+			<br/><br/>
 		</div>
 	</div>
 	<div class="section" id="projects-section">
@@ -212,7 +192,8 @@
 	</div>
 	<div class="section fp-auto-height verticalCentered">
 		<div id="contact-section">
-			@_@
+			Thanks for visiting! :)<br/>
+			Despite being a WIP, I hope you enjoyed browsing my site.
 		</div>
 	</div>
 </div>
