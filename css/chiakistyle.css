@@ -33,13 +33,14 @@
 	font-family:'SUNN';
 	src:url('/fonts/SUNN.otf');
 }
-#ban1{display:none;}
 
-*, *:before, *:after{
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+*{
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+#navbar *,a{
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
 }
 
 body{
@@ -47,12 +48,6 @@ body{
 	font-family:'Fira-Light','Tahoma',sans-serif;
 	font-size:1.3em;
 	margin:0;
-}
-.container{
-	width:60%;
-	min-width:400px;
-	max-width:1000px;
-	margin:50px auto;
 }
 #fullpage{
 	margin-left:50px;
@@ -144,14 +139,11 @@ body{
 	padding:0 5px;
 	display:block;
 }
-h1{
-	font-size: 6em;
-}
 .section{
 	text-align:center;
 }
 #home-section{
-	background:#db1e25 url('/img/redbg.jpg') center top / cover fixed no-repeat;
+	background:#db1e25 url('../img/redbg.jpg') center top / cover fixed no-repeat;
 	padding-left:200px;
 }
 #home_welcome{
@@ -169,126 +161,75 @@ h1{
 	0%{opacity:0;left:22%;}
 	100%{opacity:1;left:25%;}
 }
-
 @-moz-keyframes welcome_appear{
 	0%{opacity:0;left:22%;}
 	100%{opacity:1;left:25%;}
 }
-
 @-o-keyframes welcome_appear{
 	0%{opacity:0;left:22%;}
 	100%{opacity:1;left:25%;}
 }
-
 @keyframes welcome_appear{
 	0%{opacity:0;left:22%;}
 	100%{opacity:1;left:25%;}
 }
 .welcome_b{
-	font-family:Code-Bold;
+	font-family:'Code-Bold';
 	font-size:5.5em;
 }
 .welcome_l{
-	font-family:Code-Light;
+	font-family:'Code-Light';
 	font-size:5.5em;
 }
-/*.top_img{
-	width:30%;
-	height:auto;
-}*/
-
-#ban1{
-	background:#eee url('http://subtlepatterns.com/patterns/skulls.png');
-	width:100%;
-	padding:110px 0;
-	text-align:center;
-	font-family: 'Throw-Bold', cursive;
-	font-size:3em;
-	color:#333;
-	position:relative;
-	z-index:4;
-	box-shadow: 0 10px 90px rgba(0,0,0,0.5);
-}
 #about-section{
-	/* background:#000 url('../img/photos/P1020356.jpg') center center / cover fixed;*/
 	background:#fff;
+	color:#151515;
+	line-height:1.4em;
 }
-#ban2{
-	background:#000 url('http://subtlepatterns.com/patterns/argyle.png') fixed;
-	width:100%;
-	padding:50px 0;
-	height:auto;
-	text-align:center;
-	color:#fff;
-	box-shadow: 0 10px 90px rgba(0,0,0,0.5);
+#about-container{
+	margin:50px auto;
+	width:50%;
+	max-width:1000px;
+	min-width:500px;
 }
-.thirdbox{
-	width:29.33%;
-	float:left;
+.profpic{
+	max-width:500px;
+	border-radius:50% 30% 50% 50%;
+}
+.about_name{
 	display:block;
-	padding:40px 0;
 	text-align:center;
-	font-family:'Century Gothic','Tahoma',sans-serif;
-	font-size:1em;
-	color:#777;
-	margin:2px 2% 0;
-	position:relative;
-	z-index:1;
+	font-size:3.2em;
+	line-height:1.7em;
 }
-#ban1_box1{
-	background:rgba(0,0,0,.1);
+.about_short{
+	display:block;
+	text-align:center;
+	font-size:1.7em;
+	line-height:2.2em;
+	letter-spacing:3px;
+	padding-bottom:20px;
+	margin-bottom:15px;
+	border-bottom:1px solid #ccc;
 }
-#ban1_box2{
-	background:rgba(0,0,0,.2);
-}
-#ban1_box3{
-	background:rgba(0,0,0,.3);
-}
-.thirdbox > i{
-	text-align:Center;
-	line-height:150%;
-	color:#fff;
-	background:rgba(0,0,0,0.8);
-	background-clip:padding-box;
-	box-shadow:0 0px 2px rgba(0,0,0,0.5);
-	border-radius:10px;
-	border:6px solid rgba(255,255,255,0.1);
-	position:absolute;
-	width:250px;
-	left:50%;
-	margin-left:-125px;
-	padding:30px;
-	bottom:100%;
-	margin-bottom:-15px;
-	visibility:hidden;
-	opacity:0;
-}
-.thirdbox > i:before,.thirdbox > i:after{
-	content:'';
-	position:absolute;
-	border-left:10px solid transparent;
-	border-right:10px solid transparent;
-	top:100%;
-	left:50%;
-	margin-left:-10px;
-}
-.thirdbox > i:after{
-	border-top:10px solid rgba(255,255,255,0.1);
-	margin-top:6px;
-	z-index:1;
-}
-.thirdbox:hover > i{
-	visibility:visible;
-	opacity:1;
+.about_title{
+	display:block;
+	text-align:left;
+	font-size:2.5em;
+	line-height:2.7em;
 }
 #projects-section{
 }
+.slide_title{
+	display:block;
+	font-size:6em;
+}
 #slide1{
-	background:#000 url('../img/photos/P1020356.jpg') center center / cover fixed;
+	background:#000 url('../img/photos/P1020356.jpg') center center / cover no-repeat;
 	color:#fff;
 }
 #slide2{
-	background:#000 url('../img/photos/P1030361.JPG') center center / cover fixed;
+	background:#000 url('../img/photos/P1030361.JPG') center center / cover no-repeat;
 }
 #resume{
 	display:block;
@@ -501,5 +442,5 @@ h1{
 }
 #contact-section{
 	background:#ccc;
-	height:40vh;
+	padding:12vh 0;
 }
