@@ -183,7 +183,7 @@ body{
 }
 #about-section{
 	background:#fff;
-	color:#151515;
+	color:#222;
 	line-height:1.4em;
 }
 #about-container{
@@ -213,19 +213,20 @@ body{
 .profpic{
 	max-width:320px;
 	border-radius:50% 2% 50% 50%;
-	border:12px solid #ddd;
-	background:#ddd;
+	border:12px solid rgba(255,255,255,0.25);
+	background:transparent;
+	box-shadow:0 0 15px rgba(0,0,0,.1);
 }
 .about_name{
 	display:block;
 	text-align:center;
-	font-size:3em;
+	font-size:2.5em;
 	line-height:1.5em;
 }
 .about_short{
 	display:block;
 	text-align:center;
-	font-size:1.7em;
+	font-size:1.3em;
 	line-height:1.3em;
 	letter-spacing:3px;
 	padding-bottom:20px;
