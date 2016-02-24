@@ -256,6 +256,9 @@ body{
 #slide2{
 	background:#000 url('../img/photos/P1030361.JPG') center center / cover no-repeat;
 }
+#slide3{
+	background:#000 url('../img/photos/P1020349.JPG') center center / cover no-repeat;
+}
 #resume{
 	display:block;
 	width:250px;
