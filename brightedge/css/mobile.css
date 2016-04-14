@@ -1,0 +1,31 @@
+/***********************
+**			 MOBILE				**
+***********************/
+@charset 'utf-8';
+/* CSS Document */
+
+
+@media (only screen and (max-device-width: 480px)){
+
+.float-l,.float-r{
+	float:none;
+}
+#container{
+	width:95%;
+	max-width:auto;
+	min-width:auto;
+}
+#logo{
+	width:auto;
+	max-width:auto;
+	min-width:auto;
+	padding-left:0;
+}
+#left-col,#right-col{
+	width:100%;
+}
+.modal > #modal-content{
+	width:80%;
+}
+
+}

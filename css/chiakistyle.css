@@ -3,35 +3,35 @@
 
 @font-face{
 	font-family:'Fira-Light';
-	src:url('/fonts/FiraSans-Light.otf')
+	src:url('../fonts/FiraSans-Light.otf')
 }
 @font-face{
 	font-family:'Fira-Light-i';
-	src:url('/fonts/FiraSans-LightItalic.otf')
+	src:url('../fonts/FiraSans-LightItalic.otf')
 }
 @font-face{
 	font-family:'Fira-Medium';
-	src:url('/fonts/FiraSans-Medium.otf')
+	src:url('../fonts/FiraSans-Medium.otf')
 }
 @font-face{
 	font-family:'Code-Bold';
-	src:url('/fonts/code-bold.ttf');
+	src:url('../fonts/code-bold.ttf');
 }
 @font-face{
 	font-family:'Code-Light';
-	src:url('/fonts/code-light.ttf');
+	src:url('../fonts/code-light.ttf');
 }
 @font-face{
 	font-family:'ModernPics';
-	src:url('/fonts/modernpics.otf');
+	src:url('../fonts/modernpics.otf');
 }
 @font-face{
 	font-family:'Anders';
-	src:url('/fonts/Anders.ttf');
+	src:url('../fonts/Anders.ttf');
 }
 @font-face{
 	font-family:'SUNN';
-	src:url('/fonts/SUNN.otf');
+	src:url('../fonts/SUNN.otf');
 }
 
 *{
