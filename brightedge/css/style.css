@@ -30,15 +30,9 @@
 .constrain{
 	width:100%;
 }
-.float-l{
-	float:left;
-}
-.float-r{
-	float:right;
-}
 
 /************************
-*				 LAYOUT					*
+*					MAIN					*
 ************************/
 a{
 	color:#08F;
