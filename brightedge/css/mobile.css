@@ -53,11 +53,11 @@ body{
 	font-size:36px;
 	padding:16px 0;
 }
-.modal > #modal-content{
+.modal > .modal-content{
 	width:80%;
 	font-size:28px;
 }
-.modal > #modal-content > #exit{
+.modal > .modal-content > .exit{
 	font-size:54px;
 }
 .manifestobox-header{
