@@ -5,8 +5,6 @@
 /* CSS Document */
 
 
-@media (screen and (max-device-width: 640px)){
-
 .float-l,.float-r{
 	float:none;
 	clear:both;
@@ -27,6 +25,4 @@
 }
 .modal > #modal-content{
 	width:80%;
-}
-
 }
