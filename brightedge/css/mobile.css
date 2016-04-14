@@ -12,7 +12,7 @@ body{
 	width:90%;
 	max-width:auto;
 	min-width:auto;
-	padding-top:105px;
+	padding-top:95px;
 }
 #header{
 	height:120px;
@@ -47,11 +47,11 @@ body{
 	font-size:32px;
 }
 .learnmore-header{
-	font-size:44px;
+	font-size:52px;
 }
 .demobutton{
 	font-size:36px;
-	padding:12px 0;
+	padding:16px 0;
 }
 .modal > #modal-content{
 	width:80%;
