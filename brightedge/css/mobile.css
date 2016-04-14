@@ -23,6 +23,22 @@
 #left-col,#right-col{
 	width:100%;
 }
+#right-col{
+	margin-top:25px;
+}
+#learnmore-header,#demobutton{
+	font-size:36px;
+}
 .modal > #modal-content{
 	width:80%;
+	font-size:20px;
+}
+.modal > #modal-content > #exit{
+	font-size:30px;
+}
+#manifestobox-header{
+	font-size:32px;
+}
+#manifesto{
+	float:right;
 }
