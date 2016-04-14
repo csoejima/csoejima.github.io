@@ -17,6 +17,9 @@ body{
 	max-width:auto;
 	min-width:auto;
 }
+#header{
+	height:120px;
+}
 #logo{
 	width:90%;
 	max-width:auto;
@@ -33,6 +36,9 @@ body{
 }
 #right-col{
 	margin-top:25px;
+}
+#right-col > .right-module{
+	padding:40px 0;
 }
 .body-header{
 	font-size:32px;
@@ -55,6 +61,7 @@ body{
 	font-size:34px;
 }
 #manifesto{
+	width:60%;
 	float:right;
 }
 .manifesto-header{
@@ -62,4 +69,8 @@ body{
 }
 .manifesto-body{
 	font-size:30px;
+	line-height:auto;
+}
+#footer{
+	font-size:16px;
 }
