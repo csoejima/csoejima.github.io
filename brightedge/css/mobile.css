@@ -8,10 +8,6 @@
 body{
 	font-size:22px;
 }
-.float-l,.float-r{
-	float:none;
-	clear:both;
-}
 #container{
 	width:90%;
 	max-width:auto;
@@ -32,13 +28,19 @@ body{
 }
 #left-col,#right-col{
 	width:100%;
+	float:none;
 	border:0;
 }
 #right-col{
-	margin-top:25px;
+	margin-top:50px;
 }
 #right-col > .right-module{
 	padding:40px 0;
+	border-bottom:0;
+	border-top:1px solid #D5D5D5;
+}
+#right-col > .right-module:first-child{
+	padding-top:40px;
 }
 .body-header{
 	font-size:32px;
@@ -52,24 +54,23 @@ body{
 }
 .modal > #modal-content{
 	width:80%;
-	font-size:20px;
+	font-size:28px;
 }
 .modal > #modal-content > #exit{
-	font-size:30px;
+	font-size:54px;
 }
 .manifestobox-header{
 	font-size:34px;
 }
 #manifesto{
-	width:60%;
-	float:right;
+	width:65%;
 }
 .manifesto-header{
 	font-size:36px;
 }
 .manifesto-body{
 	font-size:30px;
-	line-height:auto;
+	line-height:28px;
 }
 #footer{
 	font-size:16px;
