@@ -5,29 +5,44 @@
 /* CSS Document */
 
 
+body{
+	font-size:22px;
+}
 .float-l,.float-r{
 	float:none;
 	clear:both;
 }
 #container{
-	width:95%;
+	width:90%;
 	max-width:auto;
 	min-width:auto;
 }
 #logo{
-	width:auto;
+	width:90%;
 	max-width:auto;
 	min-width:auto;
 	padding-left:0;
+	text-align:center;
+}
+.mobile-wide{
+	width:50%;
 }
 #left-col,#right-col{
 	width:100%;
+	border:0;
 }
 #right-col{
 	margin-top:25px;
 }
-#learnmore-header,#demobutton{
+.body-header{
+	font-size:32px;
+}
+.learnmore-header{
+	font-size:44px;
+}
+.demobutton{
 	font-size:36px;
+	padding:12px 0;
 }
 .modal > #modal-content{
 	width:80%;
@@ -36,9 +51,15 @@
 .modal > #modal-content > #exit{
 	font-size:30px;
 }
-#manifestobox-header{
-	font-size:32px;
+.manifestobox-header{
+	font-size:34px;
 }
 #manifesto{
 	float:right;
+}
+.manifesto-header{
+	font-size:36px;
+}
+.manifesto-body{
+	font-size:30px;
 }
