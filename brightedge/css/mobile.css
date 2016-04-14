@@ -5,10 +5,11 @@
 /* CSS Document */
 
 
-@media (only screen and (max-device-width: 480px)){
+@media (screen and (max-device-width: 640px)){
 
 .float-l,.float-r{
 	float:none;
+	clear:both;
 }
 #container{
 	width:95%;
