@@ -9,6 +9,127 @@
 <link href="css/chiakistyle.css" rel="stylesheet" type="text/css" />
 <link href="css/chiakistyle_gen.css" rel="stylesheet" type="text/css" />
 <link href="css/mobile.css" media="screen and (max-device-width: 640px)" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="navbar">
+		<ul id="menu">
+			<li data-menuanchor="top" class="active"><a href="#top">Home</a></li>
+			<li data-menuanchor="about"><a href="#about">About</a></li>
+			<li data-menuanchor="projects"><a href="#projects">Resume</a></li>
+			<!-- <li data-menuanchor="art"><a href="#art">Art</a></li> -->
+			<!-- <li data-menuanchor="contact"><a href="#contact">Contact</a></li>     -->
+		</ul>
+		<ul id="icon_menu">
+			<li data-menuanchor="top" class="active"><a href="#top">]</a></li>
+			<li data-menuanchor="about"><a href="#about">f</a></li>
+			<li data-menuanchor="projects"><a href="#projects">B</a></li>
+			<!-- <li data-menuanchor="art"><a href="#art">r</a></li> -->
+			<!-- <li data-menuanchor="contact"><a href="#contact">=</a></li>     -->
+		</ul>
+		<div id="nav_contact">
+			<p id="nav_contact_header">Reach me @:</p>
+			(203) 428-1082<br/>
+			ch.soejima@gmail.com
+		</div>
+	</div>
+
+<div id="fullpage">
+	<div class="section" id="home-section">
+		<object type="image/svg+xml" data="img/coffeecup.svg" style="width:50%;margin-left:-25%;">(PNG image hurr)</object>
+		<div id="home_welcome">
+			<span class="welcome_b font-white">Hello World!</span><br/>
+			<span class="welcome_l font-white">I am </span><span class="welcome_b font-white">Casey.</span>
+		</div>
+	</div>
+	<div class="section" id="about-section">
+		<div id="about-lcontainer">
+			<img data-src="img/about_pic.jpg" alt="profilepic" class="profpic" />
+			<span class="about_name">Chiaki "Casey" Soejima</span>
+			<span class="about_short">Female | 24 | Japanese-American</span>
+			<p>Native English & Japanese bilingual speaker</p>
+		</div>
+		<div id="about-container">
+			<span class="about_title">Background</span>
+			<p>I was born in Japan and moved to the US when I was 10 months old. I grew up in Darien, CT, and am a filthy Patriots fan.</p>
+			<span class="about_title">Education</span>
+			<p>I attended Cornell University's College of Engineering from Fall 2012 to Spring 2016, majoring in ISST (Information Science). On campus, I served as Webmaster on the executive board for Slope Media Group, was/am a brother of Alpha Phi Omega, and held numerous on-campus jobs during my time there:</p>
+				<ul>
+						<li>Technology Assistant & Lab Operator for Cornell CIT</li>
+						<li>TA for Web Development classes</li>
+						<li>Office Assistant for Student Disability Services</li>
+						<li>part-time employee at a local Japanese shop/restaurant, just for funsies</li>
+				</ul>
+			<p>I've always been fascinated by web development and design, since I've been exposed to it ever since I was young by a website called Neopets.com.</p>
+			<span class="about_title">Interests</span>
+			<p>I can be somewhat indecisive, and find myself interested in the following fields & topics:
+			<ul>
+				<li>Frontend web development</li>
+				<li>UI/UX design & HCI</li>
+				<li>Graphic design & color theory</li>
+				<li>Marketing</li>
+			</ul>
+			<span class="about_title">Hobbies</span>
+			<p>When I'm not at work, sleeping, or eating, you can usually find me traveling, playing games, or watching Twitch or Netflix. I'm always up for a game of Smash, Overwatch, Apex, or PUBG.</p>
+			<br/><br/>
+		</div>
+	</div>
+	<div class="section" id="projects-section">
+		<div class="slide active" id="slide1">
+			<span class="slide_title">Still a WIP!</span>
+			While I work to make my website look nice,<br/>
+			here is a link to my resume:<br/>
+			<a href="/files/CSoejima_resume_mar19_gpa.pdf" id="resume" target="_blank">Resume</a>
+		</div>
+		<!-- <div class="slide" id="slide3">
+			<span class="slide_title">Websites</span>
+		</div> -->
+	</div>
+	<!-- <div class="section" id="art-section">
+		<ul class="panels">
+			<li>
+				<figure class="panel">
+					<div class="art-general front_panel">
+						Art
+				  </div>
+					<figcaption class="back_panel">
+						<script>
+							var file_list = ['1300tashirt.jpg','2014slopeday_unf.jpg','3220mock_final1.png','4130mock_wip.jpg','4130earphone_des1.PNG','CUAirqcards.png','Starterchinabrush1.jpg','Weightlifting2.png','celebi1.jpg','disc_of_meri1.jpg','doodle123.png','doodle123_vec.jpg','tri-mlogo1.png','truthlogo_final.png','usokki_1.png','2013cultureshow1a.png','2013slopeday2.png','4120finalprojposter.png','4240finalprojposter.png','apo_batman_logo.png','apo_qcard_frozen1_INCOMPLETE.png','aposhirtdesign2015_1.png','boom_logo2a.png','bulbasaur001.png','cornell150.png','DMAPmilotic1.jpg','draik14at.jpg','eyes_mock3.png','hadm3200finalpresentation.png','hanamizuki_2015poster.png','hanamizuki_2015poster2.png','hosting_services.png','IMG_1624.JPG','IMG_1629.JPG','inspire2.png','jointconcert0.jpg','mechedesign.png','meercaday1.jpg','origamicranewallpaper.jpg','peeku_1.png','P1020444.png','P1020452.png','porcorosso1a_sm.png','project1_web2300.jpg','project3_web1300.JPG','Sept_2014_acadtechfair1_Page_1.png','storm4.png','suicune1.jpg','table2table_process.png','table2table_zfinal.png','table2table_pres.jpg','technology_fair_ATC.png'];
+							for(var i=0;i<file_list.length;i++){
+								var file_path = 'img/prt/' + file_list[i];
+								document.write('<div class="gallery"><figure><img data-src="' + file_path + '" alt="image" class="thumb" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[art]">y</a></div></figcation></figure></div>');
+							}
+						</script>
+					</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure class="panel">
+					<div class="art-photos front_panel">
+						Photos
+				  </div>
+					<figcaption class="back_panel">
+						<script>
+							var file_list = ['006.JPG','010.jpg','011.jpg','059.JPG','P1010578.jpg','P1010589.JPG','P1010976.JPG','P1020094.JPG','P1020146.JPG','P1020160.JPG','P1020349.JPG','P1020442.JPG','P1020522.JPG','P1020563.JPG','P1030299.JPG','P1030310.JPG','P1030323.JPG','P1030420.jpg','P1030453.JPG','P1040020.JPG','P1040473.JPG','P1040651.JPG','P1000899.JPG','P1000899b.jpg','P1000907a.jpg','P1010217.jpg','P1010567c.jpg','P1012114.JPG','P1020259.JPG','P1020356.jpg','P1030297.JPG','P1030361.JPG','P1030390.JPG','P1030436.jpg','P1030440.JPG','P1030656.JPG','P1030660.JPG','P1040419a.jpg','Phone001.png','Phone002.png','Phone003.png','Phone004.png','Phone005.png','Phone006.png','Phone007.png','Phone008.jpg','Phone009.png','Phone010.png','SAM_0348_2.jpg','SAM_0374_2.jpg','SAM_0381.JPG','SAM_0395.JPG','si4h302c.jpg'];
+							for(var i=0;i<file_list.length;i++){
+							var file_path = 'img/photos/' + file_list[i];
+							document.write('<div class="gallery"><figure><img data-src="' + file_path + '" alt="photo" class="thumb" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[photos]">y</a></div></figcation></figure></div>');
+							}
+						</script>
+					</figcaption>
+				</figure>
+			    </li>
+		</ul>
+	</div>
+	<div class="section fp-auto-height verticalCentered">
+		<div id="contact-section">
+			Thanks for visiting! :)<br/>
+			Despite being a WIP, I hope you enjoyed browsing my site.
+		</div>
+	</div> -->
+</div>
+
+</body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
@@ -80,137 +201,4 @@
   ga('create', 'UA-59402244-1', 'auto');
   ga('send', 'pageview');
 </script>
-
-</head>
-
-<body>
-	<div id="navbar">
-		<ul id="menu">
-			<li data-menuanchor="top" class="active"><a href="#top">Home</a></li>
-			<li data-menuanchor="about"><a href="#about">About</a></li>
-			<li data-menuanchor="projects"><a href="#projects">Projects</a></li>
-			<li data-menuanchor="art"><a href="#art">Art</a></li>
-			<li data-menuanchor="contact"><a href="#contact">Contact</a></li>    
-		</ul>
-		<ul id="icon_menu">
-			<li data-menuanchor="top" class="active"><a href="#top">]</a></li>
-			<li data-menuanchor="about"><a href="#about">f</a></li>
-			<li data-menuanchor="projects"><a href="#projects">B</a></li>
-			<li data-menuanchor="art"><a href="#art">r</a></li>
-			<li data-menuanchor="contact"><a href="#contact">=</a></li>    
-		</ul>
-		<div id="nav_contact">
-			<p id="nav_contact_header">Reach me @:</p>
-			(203) 428-1082<br/>
-			cs833@cornell.edu
-		</div>
-	</div>
-
-<div id="fullpage">
-	<div class="section" id="home-section">
-		<object type="image/svg+xml" data="img/coffeecup.svg" style="width:50%;margin-left:-25%;">(PNG image hurr)</object>
-		<div id="home_welcome">
-			<span class="welcome_b font-white">Hello World!</span><br/>
-			<span class="welcome_l font-white">I am </span><span class="welcome_b font-white">Casey.</span>
-		</div>
-	</div>
-	<div class="section" id="about-section">
-		<div id="about-lcontainer">
-			<img data-src="img/about_pic.jpg" alt="profilepic" class="profpic" />
-			<span class="about_name">Chiaki "Casey" Soejima</span>
-			<span class="about_short">Female | 21 | Japanese-American</span>
-			<p>Native English & Japanese bilingual speaker</p>
-		</div>
-		<div id="about-container">
-			<span class="about_title">Background</span>
-			<p>I was born in Japan, but I moved to the United States when I was 10 months old. Until I was about four, we lived in our house in McLean, Virginia--but soon after, my dad was relocated to New York City and so we moved to Darien, Connecticut, where I've lived ever since.</p>
-			<span class="about_title">Education</span>
-			<p>I am a senior at Cornell University in the College of Engineering, majoring in ISST (Information Science). On campus, I serve as Webmaster on the executive board for Slope Media Group, am a brother of Alpha Phi Omega, work as a lab operator for Cornell CIT (formerly at the Cornell Academic Technologies Center in the Student Technology Assistant Program), and am / have been a teaching assistant for the Introduction to and Intermediate Web Design & Development courses.</p>
-			<p>I've always had an interest in engineering and computer science, as well as psychology, communication, and cognitive science. I've always been fascinated by web development and design, since I've been exposed to it ever since I was young by a website called Neopets.com. Through friends I've made at Cornell, I learned more about the ISST/info-sci major and how it encompassed everything that I was interested in pursuing, from human-computer interaction and user interface/experience design to web development.</p>
-			<span class="about_title">Interests</span>
-			<p>I currently have a wide array of areas that I have a curiosity for/interest in:
-			<ul>
-				<li>Web development</li>
-				<li>UI/UX design</li>
-				<li>Graphic design</li>
-				<li>Marketing</li>
-			</ul>
-			<span class="about_title">Hobbies</span>
-			<p>When I'm not in class, sleeping, or eating, I love to travel and explore new things. I really enjoy playing games and am always up for a game of Smash--in Smash 4 (Wii U & 3DS), my mains are Ness and Lucina.</p>
-			<br/><br/>
-		</div>
-	</div>
-	<div class="section" id="projects-section">
-		<div class="slide active" id="slide1">
-			<span class="slide_title">Still a WIP!</span>
-			While I work to make my website look nice,<br/>
-			here is a link to my resume:<br/>
-			<a href="/files/CSoejima_resume_sp16.pdf" id="resume" target="_blank">Resume</a>
-		</div>
-		<div class="slide" id="slide2">
-			<span class="slide_title">Relevant Coursework</span>
-			<ul>
-				<li>Data-driven Web Applications (INFO 3300)</li>
-				<li>Introductory & Intermediate Web Design (INFO 1300 & 2300)</li>
-				<li>Machine Learning for Data Science (CS 4786)</li>
-				<li>Rapid Prototyping (INFO 4320)</li>
-				<li>Designing Technology for Social Impact (INFO 4240)</li>
-				<li>Ubiquitous Computing (INFO 4120)</li>
-				<li>Health & Computation (INFO 4130)</li>
-				<li>Optimization (ORIE 3300)</li>
-				<li>... more to be added!</li>
-			</ul>
-		</div>
-		<div class="slide" id="slide3">
-			<span class="slide_title">Websites</span>
-			Again, still a WIP, but check out websites where I've helped redesign the layout:<br/>
-			<a href="http://slopemedia.org">Slope Media Group</a><br/>
-			<a href="http://apogamma.org">Alpha Phi Omega, Gamma Chapter</a>
-		</div>
-	</div>
-	<div class="section" id="art-section">
-		<ul class="panels">
-			<li>
-				<figure class="panel">
-					<div class="art-general front_panel">
-						Art
-				  </div>
-					<figcaption class="back_panel">
-						<script>
-							var file_list = ['1300tashirt.jpg','2014slopeday_unf.jpg','3220mock_final1.png','4130mock_wip.jpg','4130earphone_des1.PNG','CUAirqcards.png','Starterchinabrush1.jpg','Weightlifting2.png','celebi1.jpg','disc_of_meri1.jpg','doodle123.png','doodle123_vec.jpg','tri-mlogo1.png','truthlogo_final.png','usokki_1.png','2013cultureshow1a.png','2013slopeday2.png','4120finalprojposter.png','4240finalprojposter.png','apo_batman_logo.png','apo_qcard_frozen1_INCOMPLETE.png','aposhirtdesign2015_1.png','boom_logo2a.png','bulbasaur001.png','cornell150.png','DMAPmilotic1.jpg','draik14at.jpg','eyes_mock3.png','hadm3200finalpresentation.png','hanamizuki_2015poster.png','hanamizuki_2015poster2.png','hosting_services.png','IMG_1624.JPG','IMG_1629.JPG','inspire2.png','jointconcert0.jpg','mechedesign.png','meercaday1.jpg','origamicranewallpaper.jpg','peeku_1.png','P1020444.png','P1020452.png','porcorosso1a_sm.png','project1_web2300.jpg','project3_web1300.JPG','Sept_2014_acadtechfair1_Page_1.png','storm4.png','suicune1.jpg','table2table_process.png','table2table_zfinal.png','table2table_pres.jpg','technology_fair_ATC.png'];
-							for(var i=0;i<file_list.length;i++){
-								var file_path = 'img/prt/' + file_list[i];
-								document.write('<div class="gallery"><figure><img data-src="' + file_path + '" alt="image" class="thumb" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[art]">y</a></div></figcation></figure></div>');
-							}
-						</script>
-					</figcaption>
-				</figure>
-			</li>
-			<li>
-				<figure class="panel">
-					<div class="art-photos front_panel">
-						Photos
-				  </div>
-					<figcaption class="back_panel">
-						<script>
-							var file_list = ['006.JPG','010.jpg','011.jpg','059.JPG','P1010578.jpg','P1010589.JPG','P1010976.JPG','P1020094.JPG','P1020146.JPG','P1020160.JPG','P1020349.JPG','P1020442.JPG','P1020522.JPG','P1020563.JPG','P1030299.JPG','P1030310.JPG','P1030323.JPG','P1030420.jpg','P1030453.JPG','P1040020.JPG','P1040473.JPG','P1040651.JPG','P1000899.JPG','P1000899b.jpg','P1000907a.jpg','P1010217.jpg','P1010567c.jpg','P1012114.JPG','P1020259.JPG','P1020356.jpg','P1030297.JPG','P1030361.JPG','P1030390.JPG','P1030436.jpg','P1030440.JPG','P1030656.JPG','P1030660.JPG','P1040419a.jpg','Phone001.png','Phone002.png','Phone003.png','Phone004.png','Phone005.png','Phone006.png','Phone007.png','Phone008.jpg','Phone009.png','Phone010.png','SAM_0348_2.jpg','SAM_0374_2.jpg','SAM_0381.JPG','SAM_0395.JPG','si4h302c.jpg'];
-							for(var i=0;i<file_list.length;i++){
-							var file_path = 'img/photos/' + file_list[i];
-							document.write('<div class="gallery"><figure><img data-src="' + file_path + '" alt="photo" class="thumb" /><figcaption><div><a href="' + file_path + '" rel="shadowbox[photos]">y</a></div></figcation></figure></div>');
-							}
-						</script>
-					</figcaption>
-				</figure>
-			    </li>
-		</ul>
-	</div>
-	<div class="section fp-auto-height verticalCentered">
-		<div id="contact-section">
-			Thanks for visiting! :)<br/>
-			Despite being a WIP, I hope you enjoyed browsing my site.
-		</div>
-	</div>
-</div>
-
-</body>
 </html>
