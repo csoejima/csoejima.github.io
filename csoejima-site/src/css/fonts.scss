@@ -1,0 +1,34 @@
+@import './variables.scss';
+
+@font-face{
+	font-family:'Fira-Light';
+	src:url('#{$fontPath}FiraSans-Light.otf')
+}
+@font-face{
+	font-family:'Fira-Light-i';
+	src:url('#{$fontPath}FiraSans-LightItalic.otf')
+}
+@font-face{
+	font-family:'Fira-Medium';
+	src:url('#{$fontPath}FiraSans-Medium.otf')
+}
+@font-face{
+	font-family:'Code-Bold';
+	src:url('#{$fontPath}code-bold.ttf');
+}
+@font-face{
+	font-family:'Code-Light';
+	src:url('#{$fontPath}code-light.ttf');
+}
+@font-face{
+	font-family:'ModernPics';
+	src:url('#{$fontPath}modernpics.otf');
+}
+@font-face{
+	font-family:'Anders';
+	src:url('#{$fontPath}Anders.ttf');
+}
+@font-face{
+	font-family:'SUNN';
+	src:url('#{$fontPath}SUNN.otf');
+}

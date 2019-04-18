@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import './fonts.scss';
+
+.clear{
+    clear:both;
+}
+a{
+    text-decoration:none;
+}
+.font-white{
+    color:#fff;
+}
+.font-black{
+    color:#000;
+}
+.font-center{
+    text-align:center;
+}
+.font-left{
+    text-align:left;
+}
+.font-justify{
+    text-align:justify;
+}
+.m-center{
+    margin:0 auto;
+}
+.f-left{
+    float:left;
+}
+.f-right{
+    float:right;
+}
+.t-outer{
+    display:table;
+}
+.t-cell{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
